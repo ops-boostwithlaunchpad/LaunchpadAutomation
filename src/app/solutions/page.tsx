@@ -5,8 +5,11 @@ export default function Solutions() {
     const openCalendly = (e: React.MouseEvent) => {
         e.preventDefault();
         const url = process.env.NEXT_PUBLIC_CALENDLY_URL;
-        if ((window as any).Calendly && url) {
+        if (!url) return;
+        if ((window as any).Calendly) {
             (window as any).Calendly.initPopupWidget({ url });
+        } else {
+            window.open(url, "_blank");
         }
     };
 

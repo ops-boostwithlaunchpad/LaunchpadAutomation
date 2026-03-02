@@ -1,4 +1,17 @@
+"use client";
+
 export default function Pricing() {
+    const openCalendly = (e: React.MouseEvent) => {
+        e.preventDefault();
+        const url = process.env.NEXT_PUBLIC_CALENDLY_URL;
+        if (!url) return;
+        if ((window as any).Calendly) {
+            (window as any).Calendly.initPopupWidget({ url });
+        } else {
+            window.open(url, "_blank");
+        }
+    };
+
     return (
         <main className="pt-[80px]">
             <section className="py-[5rem] text-center bg-white">
@@ -43,7 +56,7 @@ export default function Pricing() {
                                     4-Week Deployment
                                 </li>
                             </ul>
-                            <a href="/contact" className="btn btn-primary w-full py-4 rounded-[6px] font-bold no-underline">Get Started</a>
+                            <a href="#" onClick={openCalendly} className="btn btn-primary w-full py-4 rounded-[6px] font-bold no-underline">Get Started</a>
                         </div>
 
                         {/* Enterprise Plan */}
@@ -77,7 +90,7 @@ export default function Pricing() {
                                     Dedicated Engineering Team
                                 </li>
                             </ul>
-                            <a href="/contact" className="btn bg-white text-[#0A1628] w-full py-4 rounded-[6px] font-bold hover:bg-bg-surface no-underline">Contact Sales</a>
+                            <a href="#" onClick={openCalendly} className="btn bg-white text-[#0A1628] w-full py-4 rounded-[6px] font-bold hover:bg-bg-surface no-underline">Contact Sales</a>
                         </div>
 
                     </div>

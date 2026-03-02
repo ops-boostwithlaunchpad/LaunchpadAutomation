@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Script from "next/script";
 
 
 export default function RootLayout({
@@ -19,13 +20,13 @@ export default function RootLayout({
           href="https://assets.calendly.com/assets/external/widget.css"
           rel="stylesheet"
         />
-        <script src="https://unpkg.com/@phosphor-icons/web" async></script>
-        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
       </head>
       <body className="antialiased">
         <Navbar />
         {children}
         <Footer />
+        <Script src="https://unpkg.com/@phosphor-icons/web" strategy="afterInteractive" />
+        <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
       </body>
     </html>
   );
