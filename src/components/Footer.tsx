@@ -1,19 +1,7 @@
-"use client";
-
 import Link from "next/link";
 
 
 export default function Footer() {
-    const openCalendly = (e: React.MouseEvent) => {
-        e.preventDefault();
-        const url = process.env.NEXT_PUBLIC_CALENDLY_URL;
-        if (!url) return;
-        if ((window as any).Calendly) {
-            (window as any).Calendly.initPopupWidget({ url });
-        } else {
-            window.open(url, "_blank");
-        }
-    };
 
     return (
         <footer className="bg-[#1E293B] py-[60px] text-[#F8FAFC]">
@@ -41,8 +29,7 @@ export default function Footer() {
                     <div className="footer-col">
                         <h4 className="text-white text-[1.1rem] font-bold mb-[1.5rem] font-inter">Contact</h4>
                         <a
-                            href="#"
-                            onClick={openCalendly}
+                            href="https://boostwithlaunchpad.com/contact"
                             className="text-[#94A3B8] block mb-[12px] text-[0.95rem] hover:text-white transition-colors no-underline"
                         >
                             Schedule Call

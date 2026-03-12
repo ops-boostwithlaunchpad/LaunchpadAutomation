@@ -1,19 +1,7 @@
-"use client";
-
 import Image from "next/image";
 
 
 export default function Home() {
-  const openCalendly = (e: React.MouseEvent) => {
-    e.preventDefault();
-    const url = process.env.NEXT_PUBLIC_CALENDLY_URL;
-    if (!url) return;
-    if ((window as any).Calendly) {
-      (window as any).Calendly.initPopupWidget({ url });
-    } else {
-      window.open(url, "_blank");
-    }
-  };
 
   return (
     <main className="pt-[80px]">
@@ -32,8 +20,7 @@ export default function Home() {
           </p>
           <div className="cta-group flex gap-4 justify-center max-md:flex-col max-md:w-full">
             <a
-              href="#"
-              onClick={openCalendly}
+              href="https://boostwithlaunchpad.com/contact"
               className="btn btn-primary px-[1.6rem] py-[0.8rem] rounded-[6px] font-semibold text-white no-underline max-md:w-full"
             >
               Schedule Discovery Call
@@ -222,8 +209,7 @@ export default function Home() {
           </p>
 
           <a
-            href="#"
-            onClick={openCalendly}
+            href="https://boostwithlaunchpad.com/contact"
             className="bg-white text-[#0A1628] font-bold py-[1rem] px-[2.5rem] rounded-main text-[1.1rem] hover:bg-bg-surface transition-all hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)] inline-block no-underline"
           >
             Schedule Discovery Call

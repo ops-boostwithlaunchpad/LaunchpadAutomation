@@ -1,17 +1,4 @@
-"use client";
-
 export default function Solutions() {
-
-    const openCalendly = (e: React.MouseEvent) => {
-        e.preventDefault();
-        const url = process.env.NEXT_PUBLIC_CALENDLY_URL;
-        if (!url) return;
-        if ((window as any).Calendly) {
-            (window as any).Calendly.initPopupWidget({ url });
-        } else {
-            window.open(url, "_blank");
-        }
-    };
 
     return (
         <main className="pt-[80px]">
@@ -80,8 +67,7 @@ export default function Solutions() {
                         Book a discovery call and we&apos;ll show you how we can automate your specific workflow.
                     </p>
                     <a
-                        href="#"
-                        onClick={openCalendly}
+                        href="https://boostwithlaunchpad.com/contact"
                         className="bg-white text-[#0A1628] font-bold py-[1rem] px-[2.5rem] rounded-main text-[1.1rem] hover:bg-bg-surface transition-all inline-block no-underline"
                     >
                         Schedule Discovery Call

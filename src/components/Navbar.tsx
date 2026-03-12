@@ -7,17 +7,6 @@ import Image from "next/image";
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-    const openCalendly = (e: React.MouseEvent) => {
-        e.preventDefault();
-        const url = process.env.NEXT_PUBLIC_CALENDLY_URL;
-        if (!url) return;
-        if ((window as any).Calendly) {
-            (window as any).Calendly.initPopupWidget({ url });
-        } else {
-            window.open(url, "_blank");
-        }
-    };
-
     return (
         <>
             <header className="h-[80px] bg-white border-b border-[#E2E8F0] fixed top-0 left-0 w-full z-[1000] flex items-center transition-all">
@@ -42,8 +31,7 @@ export default function Navbar() {
 
                     <div className="header-right flex items-center gap-4 z-[20]">
                         <a
-                            href="#"
-                            onClick={openCalendly}
+                            href="https://boostwithlaunchpad.com/contact"
                             className="bg-[#2563EB] text-white px-[1.2rem] py-[0.6rem] rounded-[6px] font-semibold text-[0.95rem] hover:bg-[#3B82F6] transition-colors no-underline max-md:px-[1rem] max-md:py-[0.5rem] max-md:text-[0.9rem]"
                         >
                             Book Discovery
@@ -65,8 +53,7 @@ export default function Navbar() {
                     <Link href="/pricing" className="py-2 text-[#475569] no-underline">Pricing</Link>
                     <Link href="/requests" className="py-2 text-[#475569] no-underline">Requests</Link>
                     <a
-                        href="#"
-                        onClick={openCalendly}
+                        href="https://boostwithlaunchpad.com/contact"
                         className="btn-primary mt-4 py-4 text-center rounded-[6px] no-underline"
                     >
                         Book Discovery
