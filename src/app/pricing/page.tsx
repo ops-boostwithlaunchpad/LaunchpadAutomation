@@ -44,7 +44,7 @@ export default function Pricing() {
                                     4-Week Deployment
                                 </li>
                             </ul>
-                            <a href="https://boostwithlaunchpad.com/contact" className="btn btn-primary w-full py-4 rounded-[6px] font-bold no-underline">Get Started</a>
+                            <a href="https://boostwithlaunchpad.com" className="btn btn-primary w-full py-4 rounded-[6px] font-bold no-underline">Get Started</a>
                         </div>
 
                         {/* Enterprise Plan */}
@@ -78,7 +78,7 @@ export default function Pricing() {
                                     Dedicated Engineering Team
                                 </li>
                             </ul>
-                            <a href="https://boostwithlaunchpad.com/contact" className="btn bg-white text-[#0A1628] w-full py-4 rounded-[6px] font-bold hover:bg-bg-surface no-underline">Contact Sales</a>
+                            <a href="https://boostwithlaunchpad.com" className="btn bg-white text-[#0A1628] w-full py-4 rounded-[6px] font-bold hover:bg-bg-surface no-underline">Contact Sales</a>
                         </div>
 
                     </div>

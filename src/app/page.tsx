@@ -20,7 +20,7 @@ export default function Home() {
           </p>
           <div className="cta-group flex gap-4 justify-center max-md:flex-col max-md:w-full">
             <a
-              href="https://boostwithlaunchpad.com/contact"
+              href="https://boostwithlaunchpad.com"
               className="btn btn-primary px-[1.6rem] py-[0.8rem] rounded-[6px] font-semibold text-white no-underline max-md:w-full"
             >
               Schedule Discovery Call
@@ -209,7 +209,7 @@ export default function Home() {
           </p>
 
           <a
-            href="https://boostwithlaunchpad.com/contact"
+            href="https://boostwithlaunchpad.com"
             className="bg-white text-[#0A1628] font-bold py-[1rem] px-[2.5rem] rounded-main text-[1.1rem] hover:bg-bg-surface transition-all hover:-translate-y-[2px] hover:shadow-[0_4px_12px_rgba(0,0,0,0.2)] inline-block no-underline"
           >
             Schedule Discovery Call

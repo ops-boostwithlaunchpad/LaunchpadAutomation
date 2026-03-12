@@ -29,7 +29,7 @@ export default function Footer() {
                     <div className="footer-col">
                         <h4 className="text-white text-[1.1rem] font-bold mb-[1.5rem] font-inter">Contact</h4>
                         <a
-                            href="https://boostwithlaunchpad.com/contact"
+                            href="https://boostwithlaunchpad.com"
                             className="text-[#94A3B8] block mb-[12px] text-[0.95rem] hover:text-white transition-colors no-underline"
                         >
                             Schedule Call

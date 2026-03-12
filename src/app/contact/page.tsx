@@ -107,7 +107,7 @@ export default function Contact() {
                             <h3 className="mb-2 text-[#0A1628] font-semibold">Prefer a live discovery call?</h3>
                             <p className="text-text-muted mb-6">Skip the form and book a 45-minute discovery call directly with our team.</p>
                             <a
-                                href="https://boostwithlaunchpad.com/contact"
+                                href="https://boostwithlaunchpad.com"
                                 className="btn btn-primary w-full p-4 text-[1.1rem] rounded-[6px] font-bold no-underline"
                             >
                                 Book a Discovery Call

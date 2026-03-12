@@ -67,7 +67,7 @@ export default function Solutions() {
                         Book a discovery call and we&apos;ll show you how we can automate your specific workflow.
                     </p>
                     <a
-                        href="https://boostwithlaunchpad.com/contact"
+                        href="https://boostwithlaunchpad.com"
                         className="bg-white text-[#0A1628] font-bold py-[1rem] px-[2.5rem] rounded-main text-[1.1rem] hover:bg-bg-surface transition-all inline-block no-underline"
                     >
                         Schedule Discovery Call

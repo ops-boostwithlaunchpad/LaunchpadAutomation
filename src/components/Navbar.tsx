@@ -31,7 +31,7 @@ export default function Navbar() {
 
                     <div className="header-right flex items-center gap-4 z-[20]">
                         <a
-                            href="https://boostwithlaunchpad.com/contact"
+                            href="https://boostwithlaunchpad.com"
                             className="bg-[#2563EB] text-white px-[1.2rem] py-[0.6rem] rounded-[6px] font-semibold text-[0.95rem] hover:bg-[#3B82F6] transition-colors no-underline max-md:px-[1rem] max-md:py-[0.5rem] max-md:text-[0.9rem]"
                         >
                             Book Discovery
@@ -53,7 +53,7 @@ export default function Navbar() {
                     <Link href="/pricing" className="py-2 text-[#475569] no-underline">Pricing</Link>
                     <Link href="/requests" className="py-2 text-[#475569] no-underline">Requests</Link>
                     <a
-                        href="https://boostwithlaunchpad.com/contact"
+                        href="https://boostwithlaunchpad.com"
                         className="btn-primary mt-4 py-4 text-center rounded-[6px] no-underline"
                     >
                         Book Discovery
